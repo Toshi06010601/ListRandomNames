@@ -17,7 +17,7 @@ async function getUsers() {
 //関数（メソッド）
 async function listUsers() {
     const users = await getUsers();
-    users.forEach(addList);
+    users.forEach((user) => addList(user));
 }
 
 //イベント
